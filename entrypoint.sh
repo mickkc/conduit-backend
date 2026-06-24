@@ -1,6 +1,5 @@
 #!/bin/sh
 
-python manage.py makemigrations
 python manage.py migrate
 
 if [ -n "$DJANGO_SUPERUSER_USERNAME" ] && [ -n "$DJANGO_SUPERUSER_EMAIL" ] && [ -n "$DJANGO_SUPERUSER_PASSWORD" ]; then
